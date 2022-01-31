@@ -19,7 +19,13 @@ export default function Header(props) {
         ))}
       </nav>
       <button className='md:hidden z-10' onClick={props.handleNav}>
-        X
+        <div className={!props.navMode ? 'block' : 'hidden'}>
+          <i className='fas fa-bars'></i>
+        </div>
+
+        <div className={props.navMode ? 'block' : 'hidden'}>
+          <i className='fas fa-times'></i>
+        </div>
       </button>
     </header>
   );

@@ -13,6 +13,11 @@
   p {
     @apply px-4;
   }
+
+  .circle {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    @apply w-96 h-96 rounded-full absolute  dark:shadow-lg dark:shadow-gray-800;
+  }
 }
 
 * {
