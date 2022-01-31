@@ -28,7 +28,7 @@ function App() {
       <Contact />
 
       <button
-        className='bg-white fixed right-8 bottom-8 rounded-full shadow-sm hover:shadow-md  shadow-[#f0f0f0] hover:shadow-[#f0f0f0] dark:bg-[#0D0E10] dark:shadow-[#f0f0f0] w-12 h-12'
+        className='bg-white fixed right-8 bottom-8 rounded-full shadow-sm hover:shadow-md  shadow-[#0D0E10] hover:shadow-[#0D0E10] dark:bg-[#0D0E10] dark:shadow-[#f0f0f0] w-12 h-12'
         onClick={() => setDarkMode(!darkMode)}
       >
         <div className={!darkMode ? 'block' : 'hidden'}>

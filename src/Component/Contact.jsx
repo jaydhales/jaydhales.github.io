@@ -4,13 +4,14 @@ export default function Contact() {
       className='mt-12 grid grid-cols-1 lg:grid-cols-2 w-full place-items-center'
       id='contact'
     >
-      <div className='relative h-[500px]'>
+      <div className='hidden sm:block relative h-[500px]'>
         <div className='circle bg-[#f0f0f0] dark:bg-[#0D0E10] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'></div>
         <div className='circle bg-[#41f2ff] bg-opacity-20 white top-1/2 -translate-y-[60%] left-1/2 -translate-x-[40%]'></div>
         <h1 className='absolute text-left top-[50%] -translate-y-[100%] left-1/2 -translate-x-1/2 w-60'>
           Got a project? <u className=''>Let's Talk!</u>
         </h1>
       </div>
+
       <div className='contact-form'>
         <div className='flex flex-col items-center w-full p-8 shadow'>
           <h1 className='text-3xl font-extrabold mb-8'>Contact Us</h1>
