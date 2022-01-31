@@ -1,8 +1,15 @@
 export default function About() {
   return (
-    <main className='grid place-items-center my-1 h-[700px]' id="home">
-      <img src="./assets/avatar.svg" alt="" />
-      <h1 className="m-0">Hi, I'm James</h1>
+    <main className=' mt-12 grid place-items-center my-1 gap-4' id='home'>
+      <div className='w-[250px] h-[250px] rounded-full bg-[#41f2ff] bg-opacity-20 relative'>
+        <img
+          src='./assets/Avatar/Avatar4.webp'
+          alt=''
+          className='absolute top-6'
+        />
+      </div>
+
+      <h1 className='m-0'>Hi, I'm James</h1>
       <p className='text-2xl sm:text-4xl md:text-5xl font-semibold'>
         Frontend Web Developer
       </p>
