@@ -29,11 +29,11 @@ export default function Header(props) {
       </nav>
       <button className='md:hidden z-20' onClick={props.handleNav}>
         <div className={!props.navMode ? 'block' : 'hidden'}>
-          <i className='fas fa-bars'></i>
+          <i className='fas fa-bars fa-2x'></i>
         </div>
 
         <div className={props.navMode ? 'block' : 'hidden'}>
-          <i className='fas fa-times'></i>
+          <i className='fas fa-times fa-2x'></i>
         </div>
       </button>
     </header>

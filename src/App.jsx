@@ -4,11 +4,12 @@ import Projects from './Component/Projects';
 import Skills from './Component/Skills';
 import Contact from './Component/Contact';
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [nav, setNav] = useState(false);
+  const inputRef = useRef();
 
   darkMode
     ? document.firstElementChild.classList.add('dark')
@@ -19,13 +20,34 @@ function App() {
     setNav(!nav);
     document.querySelector('nav').classList.toggle('hidden');
   }
+
+  function closeNav(e) {
+    if (window.scrollY > 500) {
+      setNav(false);
+      document.querySelector('nav').classList.add('hidden');
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', closeNav);
+
+    return () => {
+      window.removeEventListener('scroll', closeNav);
+    };
+  }, []);
+
   return (
-    <div className='app bg-white dark:bg-[#0D0E10] text-[#0D0E10] dark:text-white min-h-screen trans duration-300'>
+    <div className='app bg-white dark:bg-[#0D0E10] text-[#0D0E10] dark:text-white h-full trans duration-300'>
       <Header handleNav={handleNav} navMode={nav} />
-      <About />
+      <About
+        toContact={(e) => {
+          e.preventDefault();
+          inputRef.current.focus();
+        }}
+      />
       <Projects />
       <Skills />
-      <Contact />
+      <Contact inputRef={inputRef} />
 
       <button
         className='bg-white fixed z-10 right-8 bottom-8 rounded-full shadow-sm hover:shadow-md  shadow-[#0D0E10] hover:shadow-[#0D0E10] dark:bg-[#0D0E10] dark:shadow-[#f0f0f0] w-12 h-12'

@@ -16,19 +16,13 @@
 
   .circle {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    @apply w-96 h-96 rounded-full absolute  dark:shadow-lg dark:shadow-gray-800;
+    @apply w-0 h-0 sm:w-96 sm:h-96 rounded-full absolute  dark:shadow-lg dark:shadow-gray-800;
   }
 }
 
 * {
   scroll-behavior: smooth;
-}
-
-body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }

@@ -1,6 +1,6 @@
-export default function About() {
+export default function About({toContact}) {
   return (
-    <main className=' mt-12 grid place-items-center my-1 gap-4' id='home'>
+    <main className=' mt-12 grid place-items-center my-1 gap-4 min-h-[700px] h-auto' id='home'>
       <div className='w-[250px] h-[250px] rounded-full bg-[#41f2ff] bg-opacity-20 relative'>
         <img
           src='./assets/Avatar/Avatar4.webp'
@@ -19,8 +19,9 @@ export default function About() {
       </p>
 
       <a
-        href='#contact'
+        href='!#'
         className=' uppercase bg-[#0D0E10] text-white dark:bg-white dark:text-[#0D0E10] py-4 px-8 rounded-full hover:scale-105 trans duration-200 mx-4'
+        onClick={toContact}
       >
         Connect with me
       </a>
