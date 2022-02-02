@@ -37,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <div className='app'>
+    <div className='app text-justify'>
       <Header handleNav={handleNav} navMode={nav} />
       <About
         toContact={(e) => {

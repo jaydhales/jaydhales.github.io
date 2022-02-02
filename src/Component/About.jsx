@@ -1,7 +1,7 @@
 export default function About({ toContact }) {
   return (
     <main
-      className=' mt-12 grid md:place-items-center my-1 gap-4 h-[700px]'
+      className=' mt-12 grid md:place-items-center my-1 gap-4 h-[800px]'
       id='home'
     >
       <div className='w-[250px] h-[250px] rounded-full bg-[#41f2ff] bg-opacity-20 relative m-auto'>
@@ -27,7 +27,7 @@ export default function About({ toContact }) {
 
       <a
         href='!#'
-        className=' uppercase bg-[#0D0E10] text-white dark:bg-white dark:text-[#0D0E10] py-4 px-8 rounded-full hover:scale-105 trans duration-200 mx-auto w-max'
+        className=' uppercase bg-[#0D0E10] text-white dark:bg-white dark:text-[#0D0E10] py-4 px-8 rounded-full hover:scale-105 trans duration-200 mx-auto w-max h-max'
         onClick={toContact}
       >
         Connect with me
