@@ -37,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <div className='app bg-white dark:bg-[#0D0E10] text-[#0D0E10] dark:text-white h-full trans duration-300'>
+    <div className='app'>
       <Header handleNav={handleNav} navMode={nav} />
       <About
         toContact={(e) => {

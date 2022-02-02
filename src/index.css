@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
 @layer utilities {
   .trans {
     transition-timing-function: ease-in;
@@ -11,12 +13,17 @@
     @apply text-2xl font-semibold text-center m-4 p-4;
   }
   p {
-    @apply px-4;
+    @apply px-4 sm:px-8;
   }
 
   .circle {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     @apply w-0 h-0 sm:w-96 sm:h-96 rounded-full absolute  dark:shadow-lg dark:shadow-gray-800;
+  }
+
+  body {
+    @apply bg-white dark:bg-[#0D0E10] text-[#0D0E10] dark:text-white h-full trans duration-300;
+    font-family: 'Arimo', sans-serif;
   }
 }
 

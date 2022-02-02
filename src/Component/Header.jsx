@@ -27,7 +27,7 @@ export default function Header(props) {
           </a>
         ))}
       </nav>
-      <button className='md:hidden z-20' onClick={props.handleNav}>
+      <button className='md:hidden z-20 mx-4' onClick={props.handleNav}>
         <div className={!props.navMode ? 'block' : 'hidden'}>
           <i className='fas fa-bars fa-2x'></i>
         </div>
