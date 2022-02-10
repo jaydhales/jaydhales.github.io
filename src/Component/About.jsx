@@ -1,7 +1,7 @@
 export default function About({ toContact }) {
   return (
     <main
-      className=' mt-12 grid md:place-items-center my-1 gap-4 h-[800px]'
+      className=' mt-12 grid md:place-items-center my-1 mx-2 gap-4 h-[800px]'
       id='home'
     >
       <div className='w-[250px] h-[250px] rounded-full bg-[#41f2ff] bg-opacity-20 relative m-auto'>
