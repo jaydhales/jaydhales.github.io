@@ -34,7 +34,7 @@ export default function About({ toContact }) {
       </a>
 
       <a
-        href='https://drive.google.com/file/d/1CkcTKd_q3bV_aNceaGSEFwzR3ZeVq2us/view?usp=sharing'
+        href='https://drive.google.com/file/d/1ZMVCRCuy0f__6ymnepwGdPvkdHNwTUgx/view?usp=drivesdk'
         className='hover:underline text-xl text-center'
       >
         My CV
