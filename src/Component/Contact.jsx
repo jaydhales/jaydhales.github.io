@@ -79,7 +79,7 @@ export default function Contact({ inputRef }) {
       <div className='socials flex w-max my-8 mx-auto gap-4 sm:gap-8 lg:gap-12 justify-between'>
         {[
           ['github-square', 'https://github.com/jaydhales'],
-          ['google-plus-square', 'mailto:jaydhales@gmail.com'],
+          ['google-plus-square', 'mailto:jamesosunkiyesi@gmail.com'],
           ['linkedin-square', 'https://linkedin.com/in/jaydhales'],
           ['twitter-square', 'https://twitter.com/jaydhales1'],
           ['whatsapp', 'https://wa.me/message/FVOGJM63L5GCG1'],
