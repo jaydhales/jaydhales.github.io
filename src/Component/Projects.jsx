@@ -1,6 +1,7 @@
 import '../styles/project.css';
 export default function Projects() {
   const projects = [
+    ['Crappo', 'https://crypto-page-rho.vercel.app/', 'crappo'],
     ['Unsplash Clone', 'https://unsplash-clone-nu.vercel.app/', 'unsplash'],
     [
       'Space Tourism Website',
