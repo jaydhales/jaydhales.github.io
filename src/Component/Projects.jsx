@@ -15,11 +15,6 @@ export default function Projects() {
       'countries',
     ],
     ['Ordel Landing Page', 'https://ordel-project.vercel.app/', 'ordel'],
-    [
-      'Crowdfunding page',
-      'https://crowdfunding-product-page-ruddy.vercel.app/',
-      'crowdfunding',
-    ],
   ];
 
   return (
