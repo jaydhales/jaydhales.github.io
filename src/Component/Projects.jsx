@@ -1,14 +1,15 @@
 import '../styles/project.css';
 export default function Projects() {
   const projects = [
+    
     ['Crappo', 'https://crypto-page-rho.vercel.app/', 'crappo'],
+    ['Musica', 'https://musica-jay.netlify.app/', 'musica'],
     ['Unsplash Clone', 'https://unsplash-clone-nu.vercel.app/', 'unsplash'],
     [
       'Space Tourism Website',
       'https://space-tourism-website-eight.vercel.app/',
       'space',
     ],
-    ['E-Commerce Page', 'https://e-commerce-page-ten.vercel.app/', 'ecommerce'],
     [
       'Countries Stats',
       'https://rest-countries-api-roan.vercel.app/',
